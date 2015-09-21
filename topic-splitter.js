@@ -24,7 +24,6 @@ client.on('connect', function () {
 });
 
 
-
 //When there is a message on the server, parse the payload,
 //and depending on the id of the sensor publish in the right topic
 
