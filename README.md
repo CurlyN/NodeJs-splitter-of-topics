@@ -1,5 +1,3 @@
 # Micro-services
 
-Small services that we put in prod (or staging). Preferrably in docker containers.
-
-All logs should go to logstash!
+Small services that were put in Opensensors in prod (or staging). 
