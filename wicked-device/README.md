@@ -1,5 +1,5 @@
 Service to split messages of Wicked-Device organisation on subtopics depending on publishing sensorID
-
+Using mqtt connection. Made with node.js
 Subscribes to:
 
 "/orgs/wd/aqe/co",
