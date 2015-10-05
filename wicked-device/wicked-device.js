@@ -1,26 +1,8 @@
-var log4js = require('log4js');
-var logstash = require('opensensors-log4js-logstash');
-log4js.configure({
-  appenders: [
-    { type: 'console'},
-    { type: 'file',
-      filename: 'logs/wicked-device.log'},
-    { type: 'opensensors-log4js-logstash',
-      host: 'logstash.prod.opensensors.co.uk',
-      port: 4560,
-      fields: {
-        service: 'wickeddevice'
-      }
-    }
-  ]});
-
-var log = log4js.getLogger('wicked-device');
-
 var mqtt  = require('mqtt');
 
 var broker = ('http://opensensors.io');
-var port = 1883;
-var clientId = 'egg0080217eba180150';
+var port = XXXX;
+var clientId = 'XXXXX';
 
 var topic_read = ["/orgs/wd/aqe/co",
                   "/orgs/wd/aqe/no2",
@@ -35,7 +17,7 @@ log.info('connecting to mqtt broker with client-id ' + clientId + ' ...');
 var client = mqtt.connect(broker,{
   clientId: clientId,
   username: "natalyosk",
-  password: "lyqKtYGl"
+  password: "XXXX"
 });
 
 client.on('connect', function () {
