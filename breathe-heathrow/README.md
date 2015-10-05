@@ -1,5 +1,5 @@
 # BreatheHeathrow
-Service that reads from Opensensors.io platform messages, parse it and publish to different topics in Opensensors.io
+Service that restructuring publishing of messages on the server. It reads from Opensensors.io platform messages, parse it and publish to different topics in Opensensors.io
 Subscribes to;
 
 * /orgs/BreatheHeathrow/co
